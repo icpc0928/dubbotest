@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alertConfig>
+	<module>PLATFORM_LOTTERY_HK</module>
+	<interval>
+		<!-- <sendInterval>180</sendInterval> -->
+		<checkInterval>60000</checkInterval>
+	</interval>
+	<alertServer>http://127.0.0.1:8081/alertserver/Doorman</alertServer>
+	<receivors sendType="mail">
+		<receivor>tian@effecia.com</receivor>
+		<receivor>vincent@effecia.com</receivor>
+	</receivors>
+<!-- 	<receivors sendType="sms">
+		<receivor>13828845001</receivor>
+		<receivor>13888888888</receivor>
+	</receivors> -->
+</alertConfig>

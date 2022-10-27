@@ -1,0 +1,2 @@
+[TEST]
+172.28.87.26 ansible_ssh_user=cbg

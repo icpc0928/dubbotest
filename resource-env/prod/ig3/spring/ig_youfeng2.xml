@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	 xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/jee
+     	http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+     	http://dubbo.apache.org/schema/dubbo
+    http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+  	
+  	 <bean id="config" class="com.effecia.lottery.Config">
+	     <!--<property name="platformAddress" value="IGYFTest-PtWl" /> -->
+
+		 <!-- 正式站: 明禦:CBL取水-odds 專案:igOddsServer 取水server-->
+<!--		 <property name="oddsAddress" value="103.211.245.5"/>-->
+<!--		 <property name="oddsPort" value="4537" />-->
+<!--		 <property name="clientCode" value="IG3_MAX_GAME_NO" /> &lt;!&ndash; 新增 &ndash;&gt;-->
+		 <!-- 明禦:CBL取水-odds 專案:igOddsServer 取水server-->
+
+
+		 <!-- 測試站: 明禦:CBL取水-odds 專案:igOddsServer 取水server-->
+		 <property name="oddsAddress" value="103.136.116.145"/>
+		 <property name="oddsPort" value="4538" />
+		 <property name="clientCode" value="IG3_MAX_GAME_NO" /> <!-- 新增 -->
+		 <!-- 測試站: 明禦:CBL取水-odds 專案:igOddsServer 取水server-->
+
+		 <property name="walletAddress" value="IGYF-Wallet" /> <!-- n -->
+<!--	     <property name="liveGamePort" value="4531" />--> <!-- 沒用到 -->
+<!--	     <property name="innerSocketPort" value="4532" />--> <!-- 沒用到 -->
+	   <!-- <property name="platformSocketPort" value="4533" />--> <!-- 沒用到 -->
+	     <property name="walletSocketPort" value="4522" />
+	     <property name="apVersion" value="20130130.01" />
+	     <!-- <property name="entityManagerFactory" ref="entityManagerFactory" /> -->
+	     <property name="walletRegisterPassWord" value="registerWallet" />
+	   <!--   <property name="spilt" value="false" /> -->
+	     <property name="info60s" value="false" />
+	      <property name="info90s" value="false" />
+	     <!--  <property name="cutOffTime" value="" /> -->
+	      <property name="omissionDropOnBetOn" value="true" />
+	      <!--正式-->
+	    <!--  <property name="drawingMachineUrl" value="http://odd.88dd99.com/drawMache/Doorman" /> -->
+	    <!--测试-->
+<!--	    <property name="drawingMachineUrl" value="http://203.167.16.245:8088/drawingMachine/Doorman" />-->
+	     <!-- <property name="infoLotterys">
+			<list >
+		       	<value>JSCQ</value>
+     			<value>JSCQ60</value>
+     			<value>JSSC</value>
+     			<value>JSSC60</value> 
+     			<value>KLC_90</value>
+     			<value>GD115_90</value>	
+     			<value>JSC_90</value>			
+			</list>
+		</property> -->
+    </bean>
+     <bean id="configParas" class="com.effecia.lottery.ConfigParas">
+	     <property name="sessionExpireTime" value="3600000" /> 
+	     <property name="checkTime" value="10000" />
+	     <property name="cleanDays" value="20" />
+	     <property name="cleanTime" value="900000" />
+	     <property name="markSends" value="200" />
+	     <property name="agResendSize" value="500" />
+	      <property name="webResendSize" value="500" />
+	       <property name="walletResendSize" value="20" />
+	       <property name="winlossResendTime" value="60000" />
+	       <property name="balanceSendSize" value="1" />
+		<property name="errorRange" value="180"/>
+		<property name="loginMax" value="800"/>
+    </bean>
+  	<bean id="initService" class="com.effecia.lottery.InitService" init-method="startInit">
+     	<property name="sites">
+			<list > <!-- side code -->
+		       <value>f779c94f-df52-46bb-9ac1-ade0a0e89888</value>
+ 				 <!--  <value>3dfb885d-d099-4b0a-b84f-eb7f52c528ec</value> -->
+				<!-- <value>650d96f0-6855-4bac-a07c-97b7470e934b</value>
+				<value>b0c2038e-9ecb-45f3-9e09-d79b10934439</value>
+				<value>6bd949dc-72a5-4548-8f0e-7cce911d9faa</value> -->
+			</list>
+		</property>
+		<property name="lotteryTypes">
+     	<list>
+     		<value>KLC</value>
+     		<value>KLC_90</value>
+     		<value>SSC</value>
+     		<value>BJC</value>
+     		<value>JSC</value>
+     		<value>JSC_30</value>
+     		<value>JSC_60</value>
+     		<value>JSC_90</value>
+     		<value>XYC</value>
+     		<value>JSCQ</value>
+     		<value>JSCQ60</value>
+     		<value>GXKC</value>
+     		<value>HNKC</value>
+     		<value>AHK3</value>
+     		<value>XYFT</value>
+     		<value>GD115_90</value>
+     		<value>GD115</value>
+     		<value>JX115</value>
+     		<value>SD115</value>
+     		<value>LN115</value>
+     		<value>HB115</value>
+     		<value>BJKL8</value>
+     		<value>BJKL8_90</value>
+     		<value>SLFKKL8</value>
+     		<value>TWBGKL8</value>
+     		<value>FC3D</value>
+     		<value>FC3D_90</value>
+     		<value>TC3D</value>
+     		<value>BJKL8_PCEGG</value>
+     		<value>PCEGG_90</value>
+     		<value>SLFKKL8_PCEGG</value>
+     		<value>TWBGKL8_PCEGG</value>
+     		<value>JSSC</value>
+     		<value>JSSC60</value>
+     		<value>LOTTO_90</value>
+    		<value>LOTTO_MACAU</value>
+			<value>SHK3</value>
+			<value>HBK3</value>	
+			<value>HHBK3</value>
+			<value>GSK3</value>
+			<value>JSSC_180</value>
+			<value>JSCQ_180</value>
+			<value>KLC_180</value>
+			<value>JSC_180</value>
+			<value>GD115_180</value>
+			<value>FC3D_180</value>
+			<value>BJKL8_180</value>
+			<value>PCEGG_180</value>
+			<value>JSSC_300</value>
+			<value>JSCQ_300</value>
+			<value>LOTTO_300</value>
+			<value>LOTTO_600</value>
+			<value>XYFT_300</value>
+			<value>HANOI_60</value>
+			<value>HANOI_300</value>
+			<value>XYFTOLD</value>
+			<value>ANZAC_1200</value>
+			<value>VENICE_1200</value>
+			<value>MILAN_300</value>
+			<value>LIAN_1200</value>
+			<value>ROMAN_300</value>
+			<value>PARIS_1200</value>
+			<value>CANNES_300</value>
+			<value>BERLIN_1200</value>
+			<value>MADRID_300</value>
+			<value>MOSCOW_1200</value>
+			<value>GENEVA_300</value>
+			<value>VIENNA_1200</value>
+			<value>CANNES_PCEGG</value>
+			<value>BERLIN_PCEGG</value>
+     	</list>
+     </property>
+     <property name="webServerThreads" value="20"/>
+     <property name="platformServerThreads" value="20"/>
+     <property name="walletServerThreads" value="20"/>
+     <!--<property name="sendCommandThreads" value="5"/>-->
+	 <property name="sendCommandThreads" value="10"/>
+	 <property name="sendCommandBetThreads" value="15"/>
+	 <property name="loginThreads" value="5"/>
+     <property name="siteProperty" value="IG"/>     
+     </bean>
+     
+     
+     <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+         
+          <property name="url" value="jdbc:mysql://IG-YF-DB-M:3106/lottery?autoReconnect=true"/>
+         <property name="username" value="swgprogram"/>
+         <property name="password" value="6.37k_u+3(#k|dwact"/>
+         
+       <!--  配置初始化大小、最小、最大  --> 
+		  <property name="initialSize" value="50" /> 
+		  <property name="minIdle" value="50" /> 
+		  <property name="maxActive" value="500" /> 
+			<!--  配置获取连接等待超时的时间 --> 
+		  <property name="maxWait" value="60000" /> 
+			<!--  配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 --> 
+		  <property name="timeBetweenEvictionRunsMillis" value="60000" /> 
+		 <!--  配置一个连接在池中最小生存的时间，单位是毫秒 --> 
+		  <property name="minEvictableIdleTimeMillis" value="300000" /> 
+		  <property name="maxEvictableIdleTimeMillis" value="600000" /> 
+		  <property name="validationQuery" value="SELECT 'x'" /> 
+		  <property name="testWhileIdle" value="true" /> 
+		  <property name="testOnBorrow" value="false" /> 
+		  <property name="testOnReturn" value="false" /> 
+			<!--  打开PSCache，并且指定每个连接上PSCache的大小 --> 
+		  <property name="poolPreparedStatements" value="false" /> 
+		  <property name="maxPoolPreparedStatementPerConnectionSize" value="20" /> 
+			<!--  配置监控统计拦截的filters --> 
+		  <property name="filters" value="stat" /> 
+     </bean>
+	 
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="20" />
+		<property name="maxIdle" value="5" />
+		<property name="minIdle" value="5" />
+		<property name="maxWaitMillis" value="3000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="numTestsPerEvictionRun" value="3" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testOnReturn" value="true" />
+		<property name="testWhileIdle" value="false" />
+	</bean>
+	<!-- 配置信息 -->
+	<bean id="jedisConnectionFactory"
+		class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+		destroy-method="destroy">
+		<property name="hostName" value="172.31.112.5" />
+		<property name="port" value="9955" />
+		<property name="timeout" value="15000" />
+		<property name="database" value="0" />
+		<property name="password" value="fwoiefhwon35g54g0gjoj0fnflkfy8923fnkhaaf23fzfdzfde96pZdWctcwdHYw3KsxtpUYHrw2tDQNK" />
+		<property name="usePool" value="true" />
+		<property name="poolConfig" ref="jedisPoolConfig" />
+	</bean>
+
+	<!--20220922:fenrir:不知道有何用處的dubbo 服務 先關閉 -->
+
+
+   <!-- 提供方应用信息，用于计算依赖关系 -->
+<!--    <dubbo:application name="lottery_data_provider_ig2"  />-->
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+<!--    <dubbo:registry address="zookeeper://203.167.16.245:2181" />-->
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+<!--    <dubbo:protocol name="dubbo" port="20882" />    -->
+     
+     <!-- 声明需要暴露的服务接口 -->
+<!--    <dubbo:service interface="com.effecia.monitor.lottery.api.LotteryBetApi_ig2" ref="lotteryBetApi_ig2" timeout="5000" />-->
+<!--    <dubbo:service interface="com.effecia.monitor.lottery.api.LotteryGameApi_ig2" ref="lotteryGameApi_ig2" timeout="5000" />-->
+
+    <!-- 和本地bean一样实现服务 -->
+<!--    <bean id="lotteryBetApi_ig2" class="com.effecia.monitor.lottery.api.imp.LotteryBetApiImp" />-->
+<!--    <bean id="lotteryGameApi_ig2" class="com.effecia.monitor.lottery.api.imp.LotteryGameApiImp" />-->
+</beans>  

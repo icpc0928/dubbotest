@@ -1,0 +1,17 @@
+---
+
+- name: get maven target folder path
+  shell: cd $(pwd)/../target && pwd
+  register: maven_target_out
+- debug: var=maven_target_out
+- name: add maven factor to localhost
+  set_fact:
+    maven_target: '{{ maven_target_out.stdout }}'
+- debug: var=maven_target
+- name: get war
+  shell: cd $(pwd)/../target && ls -l | grep .war|  ls -1  | grep .war | head -n 1
+  register: find_war_name
+- name: add war name as factror
+  set_fact:
+    war_name: '{{ find_war_name.stdout }}'
+- debug: var=find_war_name

@@ -1,0 +1,18 @@
+---
+
+- hosts: localhost
+  roles:
+    - role: 'common/mvn'
+
+
+- hosts: TEST
+  roles:
+    - role: 'common/api'
+      vars:
+        wild_fly_home: /home/cbg/cbg/wildfly
+        java_home: /home/cbg/cbg/jdk1.8.0_102
+        back_up_folder: /home/cbg/cbg/old_war
+        my_jvm_opts: >+
+          $JAVA_OPTS -Xms1g -Xmx2g -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintAdaptiveSizePolicy
+          -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=512m -Duser.timezone=Asia/Hong_Kong
+          -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true

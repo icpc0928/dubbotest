@@ -1,0 +1,127 @@
+---
+
+- name: check wildfly is still live
+  ansible.builtin.shell:
+    cmd: 'echo "hostname is " $(hostname)'
+  register: hostname_out
+- debug: var=hostname_out.stdout
+
+- name: add maven fact
+  set_fact:
+    maven_target: "{{hostvars['localhost']['maven_target']}}"
+    war_name: "{{hostvars['localhost']['war_name']}}"
+
+- name: show variables
+  shell: 'echo update server now today is  $(date +"%Y%m%d%H%M%S") {{ wild_fly_home }} maven_target {{ maven_target }}'
+  register: echo_var_workable
+- debug: var=echo_var_workable.stdout
+
+- name: stop wildfly
+  environment:
+    JAVA_HOME: '{{ java_home }}'
+  ansible.builtin.shell:
+    cmd: "ps aux  | grep -v grep  | grep {{wild_fly_home}}  | awk '{print $2}' | xargs  kill -15"
+  register: restart_result
+  ignore_errors: yes
+
+- name: Pause for 3 secondes to stop the wildfly
+  pause:
+    seconds: 5
+
+- name: check wildfly is still live
+  ansible.builtin.shell:
+    cmd: "ps aux | grep {{wild_fly_home}} "
+  register: wildflyIsWork
+- debug: var=wildflyIsWork.stdout
+
+- name: force kill if server is still alive
+  ansible.builtin.shell:
+    cmd: "ps aux  | grep -v grep  | grep {{wild_fly_home}}  | awk '{print $2}' | xargs  kill -9"
+  register: isWildflyDead
+  ignore_errors: yes
+- debug: var=isWildflyDead.stdout
+
+- name: create a war folder
+  ansible.builtin.file:
+    path: '{{ back_up_folder}}'
+    state: directory
+    mode: '0755'
+
+- name: Check war exist
+  stat:
+    path: "{{ wild_fly_home }}/standalone/deployments/{{war_name}}"
+  register: old_war
+- debug: var=old_war
+
+- name: back up old war foler
+  ansible.builtin.shell:
+    chdir: "{{ wild_fly_home }}/standalone/deployments"
+    cmd: 'mv {{war_name}} {{ back_up_folder}}/{{war_name}}_$(date +"%Y%m%d%H%M%S")'
+  when: old_war.stat.isdir
+  ignore_errors: yes
+
+- name: delete backup file more than one hours ago
+  ansible.builtin.shell:
+    chdir: '{{ back_up_folder}}'
+    cmd: find . -maxdepth 1  -cmin  +60  | xargs  rm -rf
+  when: old_war.stat.isdir
+  ignore_errors: yes
+
+
+- name: create a ori war folder
+  ansible.builtin.file:
+    path: '{{ wild_fly_home }}/../current_war'
+    state: directory
+    mode: '0755'
+
+- name: sync  war folder
+  synchronize:
+    src: "{{ maven_target }}/{{war_name}}"
+    dest: '{{ wild_fly_home }}/../current_war/{{war_name}}.zip'
+    delete: yes
+
+- name: Create a war folder if it does not exist
+  ansible.builtin.file:
+    path: "{{ wild_fly_home }}/standalone/deployments/{{war_name}}"
+    state: directory
+    mode: '0755'
+
+- name: Unarchive a tar file
+  ansible.builtin.unarchive:
+    src: "{{ wild_fly_home }}/../current_war/{{war_name}}.zip"
+    dest: "{{ wild_fly_home }}/standalone/deployments/{{war_name}}"
+    remote_src: yes
+
+#- name: Remove temp.zip (delete file)
+#  ansible.builtin.file:
+#    path: "{{ wild_fly_home }}/standalone/deployments/temp.zip"
+#    state: absent
+
+- name: remove failed flag
+  file:
+    path: "{{ wild_fly_home }}/standalone/deployments/{{war_name}}.failed"
+    state: absent
+
+- name: touch dodeply
+  file:
+    path: "{{ wild_fly_home }}/standalone/deployments/{{war_name}}.dodeploy"
+    state: touch
+
+
+- name: start wildfly
+  environment:
+    JAVA_HOME: '{{ java_home }}'
+    TZ: "Asia/Hong_Kong"
+    JVM_OPTS: '{{ my_jvm_opts }}'
+  ansible.builtin.shell:
+    cmd: "cd {{ wild_fly_home }}/standalone/log && nohup ../../bin/standalone.sh > /dev/null 2>&1 &"
+  register: shellout
+- debug: var=shellout
+
+- name: ckeck app whether is work?
+  environment:
+    JAVA_HOME: '{{ java_home }}'
+  ansible.builtin.shell:
+    cmd: "ps aux  | grep -v grep  | grep {{wild_fly_home}}"
+  register: isAppRun
+- debug: var=isAppRun.stdout
