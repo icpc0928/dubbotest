@@ -4,7 +4,220 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33ce64e0-6135-40af-a25a-c64426a3f7b7" name="Changes" comment="delete2" />
+    <list default="true" id="33ce64e0-6135-40af-a25a-c64426a3f7b7" name="Changes" comment="init 2">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/alertConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/ahk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/bjk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/gsk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/gxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/hbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/hhbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/jsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/jxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/k3/shk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/kl8/bjkl8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/klsf/gxkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/klsf/hnkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/klsf/klc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/klsf/xyc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/klsf/ynkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/pcegg/bjkl8pcegg.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/pk10/bjc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/ssc/shsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/ssc/ssc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/ssc/xjsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/ssc/ynsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/ah115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/bj115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/gd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/hb115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/js115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/jx115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/ln115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/sd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/gametimer/syxw/sh115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/log4j2.component.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/bjcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/bjkl8OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/bjkl8PceggOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/fc3dOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/gd115OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/gxkcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/jscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/klcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/shscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/oddsLimit/sscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/app-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/gbk.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/gpk_demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/gpk_sw.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_pressure_demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_wufeng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_wufeng_demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_wufeng_sw.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_youfeng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_youfeng2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_youfeng_demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/ig_youfeng_sw.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/local/spring/igyoufeng_ylcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/alertConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/ahk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/bjk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/gsk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/gxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/hbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/hhbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/jsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/jxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/k3/shk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/kl8/bjkl8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/klsf/gxkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/klsf/hnkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/klsf/klc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/klsf/xyc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/klsf/ynkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/pcegg/bjkl8pcegg.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/pk10/aus_10.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/pk10/bjc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/ssc/shsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/ssc/ssc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/ssc/xjsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/ssc/ynsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/ah115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/bj115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/gd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/hb115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/js115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/jx115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/ln115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/sd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/gametimer/syxw/sh115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/log4j2.component.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/bjcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/bjkl8OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/bjkl8PceggOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/fc3dOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/gd115OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/gxkcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/jscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/klcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/shscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/oddsLimit/sscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/spring/app-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/spring/ig_youfeng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/spring/ig_youfeng.xml.1004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig1/spring/ig_youfeng.xml.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/alertConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/ahk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/bjk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/gsk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/gxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/hbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/hhbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/jsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/jxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/k3/shk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/kl8/bjkl8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/klsf/gxkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/klsf/hnkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/klsf/klc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/klsf/xyc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/klsf/ynkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/pcegg/bjkl8pcegg.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/pk10/aus_10.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/pk10/bjc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/ssc/shsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/ssc/ssc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/ssc/xjsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/ssc/ynsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/ah115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/bj115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/gd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/hb115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/js115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/jx115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/ln115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/sd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/gametimer/syxw/sh115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/log4j2.component.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/log4j2.xml.pk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/bjcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/bjkl8OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/bjkl8PceggOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/fc3dOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/gd115OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/gxkcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/jscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/klcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/shscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/oddsLimit/sscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/spring/app-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/spring/ig_youfeng2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig2/spring/ig_youfeng2.xml.pk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/alertConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/ahk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/bjk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/gsk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/gxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/hbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/hhbk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/jsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/jxk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/k3/shk3.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/kl8/bjkl8.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/klsf/gxkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/klsf/hnkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/klsf/klc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/klsf/xyc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/klsf/ynkc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/pcegg/bjkl8pcegg.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/pk10/aus_10.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/pk10/bjc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/ssc/shsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/ssc/ssc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/ssc/xjsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/ssc/ynsc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/ah115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/bj115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/gd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/hb115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/js115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/jx115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/ln115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/sd115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/gametimer/syxw/sh115.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/bjcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/bjkl8OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/bjkl8PceggOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/fc3dOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/gd115OddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/gxkcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/jscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/klcOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/shscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/oddsLimit/sscOddsLimit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-env/prod/ig3/spring/app-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-env/prod/ig3/spring/app-config.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +227,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2GhWyBd04KH1if6nTUSaj08juqf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,6 +237,76 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4376947" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="JBoss/WildFly 10.1.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 10.1.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59733" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -75,6 +359,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete" />

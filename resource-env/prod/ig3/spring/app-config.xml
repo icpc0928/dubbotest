@@ -18,26 +18,26 @@
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>  
     <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
  	<aop:aspectj-autoproxy proxy-target-class="true"/> 
- 	 <bean id="entityManagerFactory"  
-        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">  
-        <property name="persistenceUnitName" value="lotterygame"/>
-        <property name="dataSource" ref="myDataSource" />
-        <property name="jpaVendorAdapter">  
-            <bean  
-                class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">  
-                <property name="database" value="MYSQL" />  
-                <property name="showSql" value="false" />  
-                <property name="generateDdl" value="false" />  
-            </bean>  
-        </property>
-    </bean>
+<!-- 	 <bean id="entityManagerFactory"  -->
+<!--        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">  -->
+<!--        <property name="persistenceUnitName" value="lotterygame"/>-->
+<!--        <property name="dataSource" ref="myDataSource" />-->
+<!--        <property name="jpaVendorAdapter">  -->
+<!--            <bean  -->
+<!--                class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">  -->
+<!--                <property name="database" value="MYSQL" />  -->
+<!--                <property name="showSql" value="false" />  -->
+<!--                <property name="generateDdl" value="false" />  -->
+<!--            </bean>  -->
+<!--        </property>-->
+<!--    </bean>-->
    <!--  <jee:jndi-lookup id="entityManagerFactory" jndi-name="java:jboss/lotteryEntityManagerFactory" />  -->
-    <bean id="transactionManager"  
-        class="org.springframework.orm.jpa.JpaTransactionManager">  
-        <property name="entityManagerFactory" ref="entityManagerFactory" />  
-    </bean>
+<!--    <bean id="transactionManager"  -->
+<!--        class="org.springframework.orm.jpa.JpaTransactionManager">  -->
+<!--        <property name="entityManagerFactory" ref="entityManagerFactory" />  -->
+<!--    </bean>-->
     
-    <tx:annotation-driven transaction-manager="transactionManager" /> 
+<!--    <tx:annotation-driven transaction-manager="transactionManager" /> -->
   	
   	<!-- 异步线程池 -->
 	<bean id="taskExecutor"
