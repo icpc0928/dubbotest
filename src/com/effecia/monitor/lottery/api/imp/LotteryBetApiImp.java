@@ -5,7 +5,6 @@ import java.util.List;
 
 
 
-import com.effecia.monitor.lottery.api.LotteryBetApi_ig2;
 import com.effecia.monitor.lottery.api.LotteryBetApi_ig3;
 import com.effecia.monitor.lottery.pojo.LotteryBetRecord;
 
