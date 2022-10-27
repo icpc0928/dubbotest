@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.effecia.monitor.lottery.pojo.LotteryBetRecord;
 
-public interface LotteryBetApi_ig2 {
+public interface LotteryBetApi_ig3 {
 
 	List<LotteryBetRecord> getLotteryBetRecord(String gameNo);
 }
